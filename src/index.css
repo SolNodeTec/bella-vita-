@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-wine-50: #fdf2f4;
+  --color-wine-100: #fbe5e9;
+  --color-wine-200: #f7ced6;
+  --color-wine-300: #f1aab6;
+  --color-wine-400: #e57c91;
+  --color-wine-500: #d44d6b;
+  --color-wine-600: #b93252;
+  --color-wine-700: #9a233f;
+  --color-wine-800: #811e35;
+  --color-wine-900: #5c0f1e;
+  --color-wine-950: #3c0914;
+
+  --color-gold-50: #fbf8eb;
+  --color-gold-100: #f5edcb;
+  --color-gold-200: #ecd994;
+  --color-gold-300: #dfbf57;
+  --color-gold-400: #d3a42d;
+  --color-gold-500: #bc8a22;
+  --color-gold-600: #9e6b19;
+  --color-gold-700: #7d4d15;
+  --color-gold-800: #663e16;
+  --color-gold-900: #553316;
+  --color-gold-950: #311b09;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  /* Custom scrollbar for premium feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0d0d0d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3a111a;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5c0f1e;
+  }
+}
+

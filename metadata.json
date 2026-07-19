@@ -1,0 +1,6 @@
+{
+  "name": "Bella Vita Ristorante",
+  "description": "Um site de alta gastronomia italiana, combinando tradição, modernidade, menu sofisticado e reservas exclusivas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
