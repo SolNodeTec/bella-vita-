@@ -103,12 +103,9 @@ export default function Testimonials() {
 
               {/* Biographic Info */}
               <div className="flex items-center justify-center gap-4">
-                <img
-                  src={active.avatar}
-                  alt={active.name}
-                  className="w-12 h-12 rounded-full object-cover border border-gold-500/30"
-                  referrerPolicy="no-referrer"
-                />
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-wine-950 to-neutral-900 border border-gold-500/30 flex items-center justify-center font-mono text-xs font-semibold text-gold-300 shadow-lg shadow-black/50 select-none">
+                  {active.name.includes('Michelin') ? 'CM' : active.name.includes('Gault') ? 'GM' : active.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()}
+                </div>
                 <div className="text-left">
                   <h4 className="font-serif text-sm font-semibold text-white tracking-wider">
                     {active.name}
@@ -118,6 +115,7 @@ export default function Testimonials() {
                   </p>
                 </div>
               </div>
+
             </motion.div>
           </AnimatePresence>
         </div>

@@ -3,15 +3,16 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Camera, X, Expand, ArrowRight, Eye } from 'lucide-react';
 import { GalleryItem } from '../types';
 
+import pastaImg from '../assets/images/hero_pasta_dish_1784471177745.jpg';
+import interiorImg from '../assets/images/restaurant_interior_1784471191278.jpg';
+import chefImg from '../assets/images/chef_executive_1784471204662.jpg';
+import tiramisuImg from '../assets/images/tiramisu_deluxe_1784471218489.jpg';
+import baroloImg from '../assets/images/barolo_collection_1784487126420.jpg';
+import tableImg from '../assets/images/luxury_table_setting_1784487139550.jpg';
+
 export default function Gallery() {
   const [filter, setFilter] = useState<'all' | 'food' | 'interior' | 'details'>('all');
   const [activeItem, setActiveItem] = useState<GalleryItem | null>(null);
-
-  // Paths of our generated assets
-  const pastaImg = "/src/assets/images/hero_pasta_dish_1784471177745.jpg";
-  const interiorImg = "/src/assets/images/restaurant_interior_1784471191278.jpg";
-  const chefImg = "/src/assets/images/chef_executive_1784471204662.jpg";
-  const tiramisuImg = "/src/assets/images/tiramisu_deluxe_1784471218489.jpg";
 
   // Public curated premium Italian aesthetic images
   const items: GalleryItem[] = [
@@ -43,15 +44,16 @@ export default function Gallery() {
       id: 'g5',
       title: 'A Coleção Exclusiva de Barolos',
       category: 'details',
-      image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop'
+      image: baroloImg
     },
     {
       id: 'g6',
       title: 'A Mesa Redonda dos Fundadores',
       category: 'interior',
-      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop'
+      image: tableImg
     }
   ];
+
 
   const filteredItems = filter === 'all' ? items : items.filter(item => item.category === filter);
 

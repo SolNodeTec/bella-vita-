@@ -2,12 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MenuItem } from '../types';
 import { Wine, Sparkles, Flame, Percent, Star, ChevronRight } from 'lucide-react';
+import tiramisuImgSrc from '../assets/images/tiramisu_deluxe_1784471218489.jpg';
 
 export default function Menu() {
   const [activeCategory, setActiveCategory] = useState<'antipasti' | 'primi' | 'secondi' | 'dolci'>('primi');
-
-  // Generated Tiramisu photo path
-  const tiramisuImgSrc = "/src/assets/images/tiramisu_deluxe_1784471218489.jpg";
 
   const menuItems: MenuItem[] = [
     // Antipasti

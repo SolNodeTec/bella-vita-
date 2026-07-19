@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Calendar, Award, Compass, Star } from 'lucide-react';
+import heroImgSrc from '../assets/images/hero_pasta_dish_1784471177745.jpg';
 
 interface HeroProps {
   onReserveClick: () => void;
@@ -7,8 +8,6 @@ interface HeroProps {
 }
 
 export default function Hero({ onReserveClick, onExploreClick }: HeroProps) {
-  // Path of the generated hero pasta dish
-  const heroImgSrc = "/src/assets/images/hero_pasta_dish_1784471177745.jpg";
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black py-20">

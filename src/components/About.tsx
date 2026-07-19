@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { Award, Wine, Sparkles, BookOpen } from 'lucide-react';
+import chefImgSrc from '../assets/images/chef_executive_1784471204662.jpg';
 
 export default function About() {
-  const chefImgSrc = "/src/assets/images/chef_executive_1784471204662.jpg";
 
   const pillars = [
     {
